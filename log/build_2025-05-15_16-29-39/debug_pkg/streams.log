@@ -1,0 +1,25 @@
+[10.408s] Invoking command in '/home/cc/ros2_ws/build/debug_pkg': PYTHONPATH=/home/cc/ros2_ws/build/debug_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/debug_pkg/build --no-deps symlink_data
+[12.785s] running develop
+[14.385s] running egg_info
+[14.391s] creating debug_pkg.egg-info
+[14.399s] writing debug_pkg.egg-info/PKG-INFO
+[14.404s] writing dependency_links to debug_pkg.egg-info/dependency_links.txt
+[14.408s] writing entry points to debug_pkg.egg-info/entry_points.txt
+[14.412s] writing requirements to debug_pkg.egg-info/requires.txt
+[14.416s] writing top-level names to debug_pkg.egg-info/top_level.txt
+[14.420s] writing manifest file 'debug_pkg.egg-info/SOURCES.txt'
+[14.440s] reading manifest file 'debug_pkg.egg-info/SOURCES.txt'
+[14.448s] writing manifest file 'debug_pkg.egg-info/SOURCES.txt'
+[14.464s] running build_ext
+[14.467s] Creating /home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages/debug-pkg.egg-link (link to .)
+[14.474s] Installing path_visualizer_node script to /home/cc/ros2_ws/install/debug_pkg/lib/debug_pkg
+[14.489s] Installing yolov8_visualizer_node script to /home/cc/ros2_ws/install/debug_pkg/lib/debug_pkg
+[14.490s] 
+[14.491s] Installed /home/cc/ros2_ws/build/debug_pkg
+[14.492s] running symlink_data
+[14.493s] creating /home/cc/ros2_ws/install/debug_pkg/share/ament_index
+[14.494s] creating /home/cc/ros2_ws/install/debug_pkg/share/ament_index/resource_index
+[14.495s] creating /home/cc/ros2_ws/install/debug_pkg/share/ament_index/resource_index/packages
+[14.496s] symbolically linking /home/cc/ros2_ws/build/debug_pkg/resource/debug_pkg -> /home/cc/ros2_ws/install/debug_pkg/share/ament_index/resource_index/packages
+[14.497s] symbolically linking /home/cc/ros2_ws/build/debug_pkg/package.xml -> /home/cc/ros2_ws/install/debug_pkg/share/debug_pkg
+[14.970s] Invoked command in '/home/cc/ros2_ws/build/debug_pkg' returned '0': PYTHONPATH=/home/cc/ros2_ws/build/debug_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/debug_pkg/build --no-deps symlink_data

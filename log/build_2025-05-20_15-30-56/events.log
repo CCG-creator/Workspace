@@ -1,0 +1,733 @@
+[0.000000] (-) TimerEvent: {}
+[0.001807] (camera_perception_pkg) JobQueued: {'identifier': 'camera_perception_pkg', 'dependencies': OrderedDict()}
+[0.002452] (debug_pkg) JobQueued: {'identifier': 'debug_pkg', 'dependencies': OrderedDict()}
+[0.002989] (interfaces_pkg) JobQueued: {'identifier': 'interfaces_pkg', 'dependencies': OrderedDict()}
+[0.003193] (lidar_perception_pkg) JobQueued: {'identifier': 'lidar_perception_pkg', 'dependencies': OrderedDict()}
+[0.003607] (serial_communication_pkg) JobQueued: {'identifier': 'serial_communication_pkg', 'dependencies': OrderedDict()}
+[0.003735] (decision_making_pkg) JobQueued: {'identifier': 'decision_making_pkg', 'dependencies': OrderedDict([('interfaces_pkg', '/home/cc/ros2_ws/install/interfaces_pkg')])}
+[0.003873] (interfaces_pkg) JobStarted: {'identifier': 'interfaces_pkg'}
+[0.057139] (camera_perception_pkg) JobStarted: {'identifier': 'camera_perception_pkg'}
+[0.101585] (-) TimerEvent: {}
+[0.104125] (debug_pkg) JobStarted: {'identifier': 'debug_pkg'}
+[0.161789] (lidar_perception_pkg) JobStarted: {'identifier': 'lidar_perception_pkg'}
+[0.201782] (-) TimerEvent: {}
+[0.236108] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'cmake'}
+[0.248833] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'build'}
+[0.255076] (interfaces_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cc/ros2_ws/build/interfaces_pkg', '--', '-j4', '-l4'], 'cwd': '/home/cc/ros2_ws/build/interfaces_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cc'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc'), ('OLDPWD', '/home/cc/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '925'), ('SYSTEMD_EXEC_PID', '1348'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2143'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cc/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cc'), ('JOURNAL_STREAM', '8:22298'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325'), ('INVOCATION_ID', 'ed8d013412294e488ae751196f0ed858'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ros2_ws/build/interfaces_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble')]), 'shell': False}
+[0.303483] (-) TimerEvent: {}
+[0.404963] (-) TimerEvent: {}
+[0.505999] (-) TimerEvent: {}
+[0.606885] (-) TimerEvent: {}
+[0.707776] (-) TimerEvent: {}
+[0.808717] (-) TimerEvent: {}
+[0.910044] (-) TimerEvent: {}
+[1.012793] (-) TimerEvent: {}
+[1.113652] (-) TimerEvent: {}
+[1.214740] (-) TimerEvent: {}
+[1.315647] (-) TimerEvent: {}
+[1.416585] (-) TimerEvent: {}
+[1.517644] (-) TimerEvent: {}
+[1.619089] (-) TimerEvent: {}
+[1.722724] (-) TimerEvent: {}
+[1.823615] (-) TimerEvent: {}
+[1.924633] (-) TimerEvent: {}
+[2.025558] (-) TimerEvent: {}
+[2.126571] (-) TimerEvent: {}
+[2.228224] (-) TimerEvent: {}
+[2.331052] (-) TimerEvent: {}
+[2.432406] (-) TimerEvent: {}
+[2.533376] (-) TimerEvent: {}
+[2.634271] (-) TimerEvent: {}
+[2.735144] (-) TimerEvent: {}
+[2.836073] (-) TimerEvent: {}
+[2.937239] (-) TimerEvent: {}
+[3.038124] (-) TimerEvent: {}
+[3.139255] (-) TimerEvent: {}
+[3.240128] (-) TimerEvent: {}
+[3.341167] (-) TimerEvent: {}
+[3.443638] (-) TimerEvent: {}
+[3.550229] (-) TimerEvent: {}
+[3.652739] (-) TimerEvent: {}
+[3.753678] (-) TimerEvent: {}
+[3.854884] (-) TimerEvent: {}
+[3.955901] (-) TimerEvent: {}
+[4.056755] (-) TimerEvent: {}
+[4.157852] (-) TimerEvent: {}
+[4.258958] (-) TimerEvent: {}
+[4.360625] (-) TimerEvent: {}
+[4.428609] (interfaces_pkg) StdoutLine: {'line': b'[  0%] Built target interfaces_pkg__cpp\n'}
+[4.430954] (interfaces_pkg) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_symlink_interfaces_pkg\n'}
+[4.433028] (interfaces_pkg) StdoutLine: {'line': b'[ 12%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[4.434212] (interfaces_pkg) StdoutLine: {'line': b'[ 24%] Built target interfaces_pkg__rosidl_typesupport_introspection_cpp\n'}
+[4.436156] (interfaces_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.436620] (interfaces_pkg) StdoutLine: {'line': b'writing interfaces_pkg.egg-info/PKG-INFO\n'}
+[4.437107] (interfaces_pkg) StdoutLine: {'line': b'writing dependency_links to interfaces_pkg.egg-info/dependency_links.txt\n'}
+[4.437453] (interfaces_pkg) StdoutLine: {'line': b'writing top-level names to interfaces_pkg.egg-info/top_level.txt\n'}
+[4.437774] (interfaces_pkg) StdoutLine: {'line': b"reading manifest file 'interfaces_pkg.egg-info/SOURCES.txt'\n"}
+[4.438080] (interfaces_pkg) StdoutLine: {'line': b"writing manifest file 'interfaces_pkg.egg-info/SOURCES.txt'\n"}
+[4.438507] (interfaces_pkg) StdoutLine: {'line': b'[ 24%] Built target ament_cmake_python_build_interfaces_pkg_egg\n'}
+[4.439450] (interfaces_pkg) StdoutLine: {'line': b'[ 36%] Built target interfaces_pkg__rosidl_typesupport_cpp\n'}
+[4.440465] (interfaces_pkg) StdoutLine: {'line': b'[ 48%] Built target interfaces_pkg__rosidl_generator_c\n'}
+[4.444685] (interfaces_pkg) StdoutLine: {'line': b'[ 60%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_c\n'}
+[4.445158] (interfaces_pkg) StdoutLine: {'line': b'[ 72%] Built target interfaces_pkg__rosidl_typesupport_c\n'}
+[4.445485] (interfaces_pkg) StdoutLine: {'line': b'[ 84%] Built target interfaces_pkg__rosidl_typesupport_introspection_c\n'}
+[4.460847] (-) TimerEvent: {}
+[4.536507] (interfaces_pkg) StdoutLine: {'line': b'[ 84%] Built target interfaces_pkg\n'}
+[4.561057] (-) TimerEvent: {}
+[4.662040] (-) TimerEvent: {}
+[4.672674] (interfaces_pkg) StdoutLine: {'line': b'[ 85%] Built target interfaces_pkg__py\n'}
+[4.762527] (-) TimerEvent: {}
+[4.841236] (interfaces_pkg) StdoutLine: {'line': b'[ 96%] Built target interfaces_pkg__rosidl_generator_py\n'}
+[4.862708] (-) TimerEvent: {}
+[4.964062] (interfaces_pkg) StdoutLine: {'line': b'[ 97%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.964919] (-) TimerEvent: {}
+[5.066319] (-) TimerEvent: {}
+[5.093270] (interfaces_pkg) StdoutLine: {'line': b'[ 98%] Built target interfaces_pkg__rosidl_typesupport_c__pyext\n'}
+[5.166512] (-) TimerEvent: {}
+[5.251548] (interfaces_pkg) StdoutLine: {'line': b'[100%] Built target interfaces_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[5.266745] (-) TimerEvent: {}
+[5.368006] (-) TimerEvent: {}
+[5.468756] (-) TimerEvent: {}
+[5.569576] (-) TimerEvent: {}
+[5.670393] (-) TimerEvent: {}
+[5.771192] (-) TimerEvent: {}
+[5.872057] (-) TimerEvent: {}
+[5.972976] (-) TimerEvent: {}
+[6.074067] (-) TimerEvent: {}
+[6.175859] (-) TimerEvent: {}
+[6.239025] (interfaces_pkg) CommandEnded: {'returncode': 0}
+[6.247358] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'install'}
+[6.276089] (-) TimerEvent: {}
+[6.283200] (interfaces_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cc/ros2_ws/build/interfaces_pkg'], 'cwd': '/home/cc/ros2_ws/build/interfaces_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cc'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cc'), ('OLDPWD', '/home/cc/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '925'), ('SYSTEMD_EXEC_PID', '1348'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2143'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/cc/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cc'), ('JOURNAL_STREAM', '8:22298'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325'), ('INVOCATION_ID', 'ed8d013412294e488ae751196f0ed858'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cc/ros2_ws/build/interfaces_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble')]), 'shell': False}
+[6.361544] (interfaces_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.372030] (interfaces_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.375909] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/rosidl_interfaces/interfaces_pkg\n'}
+[6.376612] (-) TimerEvent: {}
+[6.406026] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/bounding_box2_d.h\n'}
+[6.415349] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/bounding_box3_d.h\n'}
+[6.421312] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__functions.h\n'}
+[6.424664] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__struct.h\n'}
+[6.427051] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__type_support.h\n'}
+[6.429442] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__functions.h\n'}
+[6.431829] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__struct.h\n'}
+[6.448917] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__type_support.h\n'}
+[6.455392] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__functions.h\n'}
+[6.463088] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__struct.h\n'}
+[6.465244] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__type_support.h\n'}
+[6.467381] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__functions.h\n'}
+[6.470223] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__struct.h\n'}
+[6.472080] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__type_support.h\n'}
+[6.473338] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__functions.h\n'}
+[6.474180] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__struct.h\n'}
+[6.476754] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__type_support.h\n'}
+[6.477711] (-) TimerEvent: {}
+[6.479385] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__functions.h\n'}
+[6.483816] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__struct.h\n'}
+[6.486834] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__type_support.h\n'}
+[6.487579] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__functions.h\n'}
+[6.492053] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__struct.h\n'}
+[6.493021] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__type_support.h\n'}
+[6.496044] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__functions.h\n'}
+[6.499124] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__struct.h\n'}
+[6.501883] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__type_support.h\n'}
+[6.506939] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__functions.h\n'}
+[6.509860] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__struct.h\n'}
+[6.513292] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__type_support.h\n'}
+[6.516688] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__functions.h\n'}
+[6.519537] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__struct.h\n'}
+[6.522302] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__type_support.h\n'}
+[6.525815] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__functions.h\n'}
+[6.533585] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__struct.h\n'}
+[6.540384] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__type_support.h\n'}
+[6.546068] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__functions.h\n'}
+[6.552734] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__struct.h\n'}
+[6.557588] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__type_support.h\n'}
+[6.560444] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__functions.h\n'}
+[6.563796] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__struct.h\n'}
+[6.566182] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__type_support.h\n'}
+[6.569470] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__functions.h\n'}
+[6.572507] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__struct.h\n'}
+[6.574939] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__type_support.h\n'}
+[6.577811] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__functions.h\n'}
+[6.578703] (-) TimerEvent: {}
+[6.581761] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__struct.h\n'}
+[6.584220] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__type_support.h\n'}
+[6.587402] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__functions.h\n'}
+[6.590819] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__struct.h\n'}
+[6.593652] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__type_support.h\n'}
+[6.596010] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detection.h\n'}
+[6.598249] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detection_array.h\n'}
+[6.600730] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point2_d.h\n'}
+[6.603576] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point2_d_array.h\n'}
+[6.609501] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point3_d.h\n'}
+[6.612217] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point3_d_array.h\n'}
+[6.615684] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/lane_info.h\n'}
+[6.619724] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/mask.h\n'}
+[6.622699] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/motion_command.h\n'}
+[6.626264] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/path_planning_result.h\n'}
+[6.632952] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/point2_d.h\n'}
+[6.639973] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/pose2_d.h\n'}
+[6.644112] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.646605] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/target_point.h\n'}
+[6.649099] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/vector2.h\n'}
+[6.652184] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/library_path.sh\n'}
+[6.655833] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/library_path.dsv\n'}
+[6.667293] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.670666] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.673673] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[6.676583] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[6.678971] (-) TimerEvent: {}
+[6.681405] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.684428] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[6.687458] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.690298] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[6.694233] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.696996] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[6.699673] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h\n'}
+[6.702232] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__rosidl_typesupport_fastrtps_c.h\n'}
+[6.705393] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.717080] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.717968] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__rosidl_typesupport_fastrtps_c.h\n'}
+[6.718541] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h\n'}
+[6.721768] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.735155] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.740045] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[6.742745] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[6.744460] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[6.746250] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.748102] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[6.749617] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h\n'}
+[6.751213] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[6.753757] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_introspection_c.h\n'}
+[6.755660] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[6.757298] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__rosidl_typesupport_introspection_c.h\n'}
+[6.759230] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__rosidl_typesupport_introspection_c.h\n'}
+[6.761231] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.763530] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.765368] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__rosidl_typesupport_introspection_c.h\n'}
+[6.767511] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__rosidl_typesupport_introspection_c.h\n'}
+[6.769125] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.778407] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/bounding_box2_d.hpp\n'}
+[6.779194] (-) TimerEvent: {}
+[6.780405] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/bounding_box3_d.hpp\n'}
+[6.782066] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__builder.hpp\n'}
+[6.784050] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__struct.hpp\n'}
+[6.785558] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__traits.hpp\n'}
+[6.787101] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__type_support.hpp\n'}
+[6.788626] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__builder.hpp\n'}
+[6.790086] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__struct.hpp\n'}
+[6.792962] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__traits.hpp\n'}
+[6.794620] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__type_support.hpp\n'}
+[6.796286] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__builder.hpp\n'}
+[6.798366] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__struct.hpp\n'}
+[6.800721] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__traits.hpp\n'}
+[6.802902] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__type_support.hpp\n'}
+[6.804653] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__builder.hpp\n'}
+[6.808495] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__struct.hpp\n'}
+[6.810091] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__traits.hpp\n'}
+[6.811728] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__type_support.hpp\n'}
+[6.813335] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__builder.hpp\n'}
+[6.816129] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__struct.hpp\n'}
+[6.817509] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__traits.hpp\n'}
+[6.822971] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__type_support.hpp\n'}
+[6.833364] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__builder.hpp\n'}
+[6.835484] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__struct.hpp\n'}
+[6.840672] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__traits.hpp\n'}
+[6.842738] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__type_support.hpp\n'}
+[6.843550] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__builder.hpp\n'}
+[6.847249] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__struct.hpp\n'}
+[6.853686] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__traits.hpp\n'}
+[6.854284] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__type_support.hpp\n'}
+[6.855154] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__builder.hpp\n'}
+[6.855640] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__struct.hpp\n'}
+[6.859052] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__traits.hpp\n'}
+[6.859868] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__type_support.hpp\n'}
+[6.860524] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__builder.hpp\n'}
+[6.871551] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__struct.hpp\n'}
+[6.872368] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__traits.hpp\n'}
+[6.872892] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__type_support.hpp\n'}
+[6.873616] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__builder.hpp\n'}
+[6.874190] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__struct.hpp\n'}
+[6.874851] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__traits.hpp\n'}
+[6.875603] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__type_support.hpp\n'}
+[6.876131] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__builder.hpp\n'}
+[6.876770] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__struct.hpp\n'}
+[6.877270] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__traits.hpp\n'}
+[6.877694] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__type_support.hpp\n'}
+[6.878410] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__builder.hpp\n'}
+[6.878944] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__struct.hpp\n'}
+[6.879293] (-) TimerEvent: {}
+[6.887022] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__traits.hpp\n'}
+[6.887734] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__type_support.hpp\n'}
+[6.888177] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__builder.hpp\n'}
+[6.888886] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__struct.hpp\n'}
+[6.889345] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__traits.hpp\n'}
+[6.889906] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__type_support.hpp\n'}
+[6.890621] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__builder.hpp\n'}
+[6.891162] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__struct.hpp\n'}
+[6.891770] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__traits.hpp\n'}
+[6.892177] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__type_support.hpp\n'}
+[6.892562] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__builder.hpp\n'}
+[6.893355] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__struct.hpp\n'}
+[6.893814] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__traits.hpp\n'}
+[6.903027] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__type_support.hpp\n'}
+[6.903733] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__builder.hpp\n'}
+[6.904344] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__struct.hpp\n'}
+[6.905109] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__traits.hpp\n'}
+[6.905706] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__type_support.hpp\n'}
+[6.906490] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detection.hpp\n'}
+[6.907300] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detection_array.hpp\n'}
+[6.907865] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point2_d.hpp\n'}
+[6.908709] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point2_d_array.hpp\n'}
+[6.909295] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point3_d.hpp\n'}
+[6.910110] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/key_point3_d_array.hpp\n'}
+[6.910996] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/lane_info.hpp\n'}
+[6.911847] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/mask.hpp\n'}
+[6.912514] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/motion_command.hpp\n'}
+[6.916636] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/path_planning_result.hpp\n'}
+[6.917826] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/point2_d.hpp\n'}
+[6.921476] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/pose2_d.hpp\n'}
+[6.925538] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.940710] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/target_point.hpp\n'}
+[6.949063] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/vector2.hpp\n'}
+[6.961640] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.964651] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.967532] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.970484] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.973245] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.976441] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.979699] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.980494] (-) TimerEvent: {}
+[6.982684] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.985608] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.988595] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.000251] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.002756] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.008131] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.014815] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.019547] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.023905] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.027163] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.049603] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.055112] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.060867] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.066643] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.072367] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.076644] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.079288] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.080687] (-) TimerEvent: {}
+[7.083151] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.087484] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.091354] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.093848] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/motion_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.096350] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/path_planning_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.098765] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.101050] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.103491] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/target_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.106212] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/interfaces_pkg/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.110671] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/pythonpath.sh\n'}
+[7.111567] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/pythonpath.dsv\n'}
+[7.114614] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.118783] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.121553] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.135570] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.154592] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/__init__.py\n'}
+[7.156928] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[7.159385] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.161949] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.164605] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.167338] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.170456] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.172696] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/libinterfaces_pkg__rosidl_generator_py.so\n'}
+[7.175060] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/__init__.py\n'}
+[7.177461] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_bounding_box2_d.py\n'}
+[7.179736] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_bounding_box2_d_s.c\n'}
+[7.180928] (-) TimerEvent: {}
+[7.184733] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_bounding_box3_d.py\n'}
+[7.187141] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_bounding_box3_d_s.c\n'}
+[7.189383] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_detection.py\n'}
+[7.191825] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_detection_array.py\n'}
+[7.194464] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_detection_array_s.c\n'}
+[7.196319] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_detection_s.c\n'}
+[7.198640] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point2_d.py\n'}
+[7.200792] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point2_d_array.py\n'}
+[7.203560] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point2_d_array_s.c\n'}
+[7.205721] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point2_d_s.c\n'}
+[7.207994] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point3_d.py\n'}
+[7.211604] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point3_d_array.py\n'}
+[7.212460] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point3_d_array_s.c\n'}
+[7.214709] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_key_point3_d_s.c\n'}
+[7.218179] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_lane_info.py\n'}
+[7.221813] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_lane_info_s.c\n'}
+[7.235960] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_mask.py\n'}
+[7.241818] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_mask_s.c\n'}
+[7.244272] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_motion_command.py\n'}
+[7.247432] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_motion_command_s.c\n'}
+[7.249624] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_path_planning_result.py\n'}
+[7.252529] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_path_planning_result_s.c\n'}
+[7.254546] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_point2_d.py\n'}
+[7.256794] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_point2_d_s.c\n'}
+[7.258987] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_pose2_d.py\n'}
+[7.261243] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_pose2_d_s.c\n'}
+[7.263518] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_target_point.py\n'}
+[7.265995] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_target_point_s.c\n'}
+[7.268296] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_vector2.py\n'}
+[7.270600] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg/_vector2_s.c\n'}
+[7.274572] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.278479] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.281132] (-) TimerEvent: {}
+[7.283522] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[7.287063] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Point2D.idl\n'}
+[7.290472] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Vector2.idl\n'}
+[7.293815] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Pose2D.idl\n'}
+[7.297092] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox2D.idl\n'}
+[7.301999] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox3D.idl\n'}
+[7.306109] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Mask.idl\n'}
+[7.310277] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint2D.idl\n'}
+[7.313480] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint2DArray.idl\n'}
+[7.317137] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint3D.idl\n'}
+[7.320965] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint3DArray.idl\n'}
+[7.323819] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Detection.idl\n'}
+[7.327423] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/DetectionArray.idl\n'}
+[7.336985] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/LaneInfo.idl\n'}
+[7.338101] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/MotionCommand.idl\n'}
+[7.341603] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/TargetPoint.idl\n'}
+[7.347658] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/PathPlanningResult.idl\n'}
+[7.350690] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Point2D.msg\n'}
+[7.353680] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Vector2.msg\n'}
+[7.356657] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Pose2D.msg\n'}
+[7.359715] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox2D.msg\n'}
+[7.362721] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox3D.msg\n'}
+[7.365962] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Mask.msg\n'}
+[7.368879] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint2D.msg\n'}
+[7.371860] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint2DArray.msg\n'}
+[7.374932] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint3D.msg\n'}
+[7.377818] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/KeyPoint3DArray.msg\n'}
+[7.380781] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Detection.msg\n'}
+[7.381486] (-) TimerEvent: {}
+[7.384082] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/DetectionArray.msg\n'}
+[7.387344] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/LaneInfo.msg\n'}
+[7.390415] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/MotionCommand.msg\n'}
+[7.393597] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/TargetPoint.msg\n'}
+[7.396536] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/PathPlanningResult.msg\n'}
+[7.400191] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/package_run_dependencies/interfaces_pkg\n'}
+[7.403160] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/parent_prefix_path/interfaces_pkg\n'}
+[7.405946] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/ament_prefix_path.sh\n'}
+[7.408832] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/ament_prefix_path.dsv\n'}
+[7.411937] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/path.sh\n'}
+[7.415176] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/path.dsv\n'}
+[7.418037] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.bash\n'}
+[7.421157] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.sh\n'}
+[7.428675] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.zsh\n'}
+[7.442196] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.dsv\n'}
+[7.443351] (interfaces_pkg) StdoutLine: {'line': b'-- Symlinking: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/package.dsv\n'}
+[7.481774] (-) TimerEvent: {}
+[7.501416] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/packages/interfaces_pkg\n'}
+[7.504612] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[7.507964] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.511585] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.514066] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.517394] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.520806] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.524198] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.532306] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkgConfig.cmake\n'}
+[7.534019] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkgConfig-version.cmake\n'}
+[7.537992] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/package.xml\n'}
+[7.542837] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_generator_c.so\n'}
+[7.548053] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[7.553041] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_c.so\n'}
+[7.557762] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_c.so\n'}
+[7.562626] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.567807] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[7.572641] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_cpp.so\n'}
+[7.581998] (-) TimerEvent: {}
+[7.683148] (-) TimerEvent: {}
+[7.795394] (-) TimerEvent: {}
+[7.882167] (interfaces_pkg) StdoutLine: {'line': b"Listing '/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg'...\n"}
+[7.883182] (interfaces_pkg) StdoutLine: {'line': b"Listing '/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages/interfaces_pkg/msg'...\n"}
+[7.895906] (-) TimerEvent: {}
+[7.929594] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_generator_py.so\n'}
+[7.936115] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_generator_cExport.cmake\n'}
+[7.945320] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.947880] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.951201] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.956963] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.960088] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.964314] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cExport.cmake\n'}
+[7.966472] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.970951] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_generator_cppExport.cmake\n'}
+[7.973892] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.974838] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.980028] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.982190] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.986321] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[7.988425] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.992631] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_generator_pyExport.cmake\n'}
+[7.994713] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/cc/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/export_interfaces_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.996039] (-) TimerEvent: {}
+[8.009025] (interfaces_pkg) CommandEnded: {'returncode': 0}
+[8.096386] (-) TimerEvent: {}
+[8.199173] (-) TimerEvent: {}
+[8.293922] (interfaces_pkg) JobEnded: {'identifier': 'interfaces_pkg', 'rc': 0}
+[8.296833] (serial_communication_pkg) JobStarted: {'identifier': 'serial_communication_pkg'}
+[8.299348] (-) TimerEvent: {}
+[8.407966] (-) TimerEvent: {}
+[8.511460] (-) TimerEvent: {}
+[8.613360] (-) TimerEvent: {}
+[8.715029] (-) TimerEvent: {}
+[8.816867] (-) TimerEvent: {}
+[8.920169] (-) TimerEvent: {}
+[9.021899] (-) TimerEvent: {}
+[9.123494] (-) TimerEvent: {}
+[9.225300] (-) TimerEvent: {}
+[9.327641] (-) TimerEvent: {}
+[9.429609] (-) TimerEvent: {}
+[9.536459] (-) TimerEvent: {}
+[9.638061] (-) TimerEvent: {}
+[9.740878] (-) TimerEvent: {}
+[9.853003] (-) TimerEvent: {}
+[9.960256] (-) TimerEvent: {}
+[10.064378] (-) TimerEvent: {}
+[10.168536] (-) TimerEvent: {}
+[10.272269] (-) TimerEvent: {}
+[10.377332] (-) TimerEvent: {}
+[10.478874] (-) TimerEvent: {}
+[10.580064] (-) TimerEvent: {}
+[10.680898] (-) TimerEvent: {}
+[10.781823] (-) TimerEvent: {}
+[10.882748] (-) TimerEvent: {}
+[10.983556] (-) TimerEvent: {}
+[11.084573] (-) TimerEvent: {}
+[11.185941] (-) TimerEvent: {}
+[11.242793] (debug_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/cc/ros2_ws/build/debug_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/cc/ros2_ws/build/debug_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cc', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc', 'OLDPWD': '/home/cc/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '925', 'SYSTEMD_EXEC_PID': '1348', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2143', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cc', 'JOURNAL_STREAM': '8:22298', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325', 'INVOCATION_ID': 'ed8d013412294e488ae751196f0ed858', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ros2_ws/build/debug_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cc/ros2_ws/build/debug_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cc/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[11.275477] (lidar_perception_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/cc/ros2_ws/build/lidar_perception_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/cc/ros2_ws/build/lidar_perception_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cc', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc', 'OLDPWD': '/home/cc/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '925', 'SYSTEMD_EXEC_PID': '1348', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2143', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cc', 'JOURNAL_STREAM': '8:22298', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325', 'INVOCATION_ID': 'ed8d013412294e488ae751196f0ed858', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ros2_ws/build/lidar_perception_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cc/ros2_ws/build/lidar_perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cc/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[11.286984] (camera_perception_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/cc/ros2_ws/build/camera_perception_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/cc/ros2_ws/build/camera_perception_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cc', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc', 'OLDPWD': '/home/cc/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '925', 'SYSTEMD_EXEC_PID': '1348', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2143', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cc', 'JOURNAL_STREAM': '8:22298', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325', 'INVOCATION_ID': 'ed8d013412294e488ae751196f0ed858', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ros2_ws/build/camera_perception_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cc/ros2_ws/build/camera_perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cc/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[11.300732] (-) TimerEvent: {}
+[11.401611] (-) TimerEvent: {}
+[11.505528] (-) TimerEvent: {}
+[11.607207] (-) TimerEvent: {}
+[11.708351] (-) TimerEvent: {}
+[11.816407] (-) TimerEvent: {}
+[11.919271] (-) TimerEvent: {}
+[12.021048] (-) TimerEvent: {}
+[12.122208] (-) TimerEvent: {}
+[12.223250] (-) TimerEvent: {}
+[12.325368] (-) TimerEvent: {}
+[12.431979] (-) TimerEvent: {}
+[12.535028] (-) TimerEvent: {}
+[12.639960] (-) TimerEvent: {}
+[12.742752] (-) TimerEvent: {}
+[12.844553] (-) TimerEvent: {}
+[12.945975] (-) TimerEvent: {}
+[13.047499] (-) TimerEvent: {}
+[13.149069] (-) TimerEvent: {}
+[13.250522] (-) TimerEvent: {}
+[13.351999] (-) TimerEvent: {}
+[13.453479] (-) TimerEvent: {}
+[13.555327] (-) TimerEvent: {}
+[13.657187] (-) TimerEvent: {}
+[13.760775] (-) TimerEvent: {}
+[13.862292] (-) TimerEvent: {}
+[13.964080] (-) TimerEvent: {}
+[14.003517] (debug_pkg) StdoutLine: {'line': b'running develop\n'}
+[14.064303] (-) TimerEvent: {}
+[14.165775] (-) TimerEvent: {}
+[14.267911] (-) TimerEvent: {}
+[14.370413] (lidar_perception_pkg) StdoutLine: {'line': b'running develop\n'}
+[14.373720] (-) TimerEvent: {}
+[14.388037] (camera_perception_pkg) StdoutLine: {'line': b'running develop\n'}
+[14.474085] (-) TimerEvent: {}
+[14.576529] (-) TimerEvent: {}
+[14.679743] (-) TimerEvent: {}
+[14.741565] (serial_communication_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/cc/ros2_ws/build/serial_communication_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/cc/ros2_ws/build/serial_communication_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cc', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc', 'OLDPWD': '/home/cc/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '925', 'SYSTEMD_EXEC_PID': '1348', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2143', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cc', 'JOURNAL_STREAM': '8:22298', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325', 'INVOCATION_ID': 'ed8d013412294e488ae751196f0ed858', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ros2_ws/build/serial_communication_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cc/ros2_ws/build/serial_communication_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cc/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[14.779984] (-) TimerEvent: {}
+[14.881884] (-) TimerEvent: {}
+[14.985028] (-) TimerEvent: {}
+[15.086612] (-) TimerEvent: {}
+[15.188578] (-) TimerEvent: {}
+[15.290073] (-) TimerEvent: {}
+[15.391617] (-) TimerEvent: {}
+[15.493143] (-) TimerEvent: {}
+[15.594544] (-) TimerEvent: {}
+[15.695954] (-) TimerEvent: {}
+[15.797658] (-) TimerEvent: {}
+[15.899098] (-) TimerEvent: {}
+[16.000429] (-) TimerEvent: {}
+[16.101876] (-) TimerEvent: {}
+[16.201247] (debug_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[16.202876] (-) TimerEvent: {}
+[16.204323] (debug_pkg) StdoutLine: {'line': b'writing debug_pkg.egg-info/PKG-INFO\n'}
+[16.207452] (debug_pkg) StdoutLine: {'line': b'writing dependency_links to debug_pkg.egg-info/dependency_links.txt\n'}
+[16.210735] (debug_pkg) StdoutLine: {'line': b'writing entry points to debug_pkg.egg-info/entry_points.txt\n'}
+[16.213612] (debug_pkg) StdoutLine: {'line': b'writing requirements to debug_pkg.egg-info/requires.txt\n'}
+[16.216325] (debug_pkg) StdoutLine: {'line': b'writing top-level names to debug_pkg.egg-info/top_level.txt\n'}
+[16.242061] (debug_pkg) StdoutLine: {'line': b"reading manifest file 'debug_pkg.egg-info/SOURCES.txt'\n"}
+[16.245266] (debug_pkg) StdoutLine: {'line': b"writing manifest file 'debug_pkg.egg-info/SOURCES.txt'\n"}
+[16.250703] (debug_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[16.262816] (debug_pkg) StdoutLine: {'line': b'Creating /home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages/debug-pkg.egg-link (link to .)\n'}
+[16.268176] (debug_pkg) StdoutLine: {'line': b'Installing path_visualizer_node script to /home/cc/ros2_ws/install/debug_pkg/lib/debug_pkg\n'}
+[16.277448] (debug_pkg) StdoutLine: {'line': b'Installing yolov8_visualizer_node script to /home/cc/ros2_ws/install/debug_pkg/lib/debug_pkg\n'}
+[16.284170] (debug_pkg) StdoutLine: {'line': b'\n'}
+[16.293220] (debug_pkg) StdoutLine: {'line': b'Installed /home/cc/ros2_ws/build/debug_pkg\n'}
+[16.298132] (debug_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[16.313595] (-) TimerEvent: {}
+[16.415615] (-) TimerEvent: {}
+[16.519245] (-) TimerEvent: {}
+[16.539940] (debug_pkg) CommandEnded: {'returncode': 0}
+[16.555697] (camera_perception_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[16.563066] (camera_perception_pkg) StdoutLine: {'line': b'writing camera_perception_pkg.egg-info/PKG-INFO\n'}
+[16.571308] (camera_perception_pkg) StdoutLine: {'line': b'writing dependency_links to camera_perception_pkg.egg-info/dependency_links.txt\n'}
+[16.580642] (camera_perception_pkg) StdoutLine: {'line': b'writing entry points to camera_perception_pkg.egg-info/entry_points.txt\n'}
+[16.588594] (camera_perception_pkg) StdoutLine: {'line': b'writing requirements to camera_perception_pkg.egg-info/requires.txt\n'}
+[16.591785] (camera_perception_pkg) StdoutLine: {'line': b'writing top-level names to camera_perception_pkg.egg-info/top_level.txt\n'}
+[16.595000] (camera_perception_pkg) StdoutLine: {'line': b"reading manifest file 'camera_perception_pkg.egg-info/SOURCES.txt'\n"}
+[16.606871] (camera_perception_pkg) StdoutLine: {'line': b"writing manifest file 'camera_perception_pkg.egg-info/SOURCES.txt'\n"}
+[16.614959] (camera_perception_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[16.622955] (-) TimerEvent: {}
+[16.627765] (camera_perception_pkg) StdoutLine: {'line': b'Creating /home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages/camera-perception-pkg.egg-link (link to .)\n'}
+[16.642098] (lidar_perception_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[16.654833] (lidar_perception_pkg) StdoutLine: {'line': b'writing lidar_perception_pkg.egg-info/PKG-INFO\n'}
+[16.662195] (camera_perception_pkg) StdoutLine: {'line': b'Installing image_publisher_node script to /home/cc/ros2_ws/install/camera_perception_pkg/lib/camera_perception_pkg\n'}
+[16.665446] (camera_perception_pkg) StdoutLine: {'line': b'Installing lane_info_extractor_node script to /home/cc/ros2_ws/install/camera_perception_pkg/lib/camera_perception_pkg\n'}
+[16.671213] (camera_perception_pkg) StdoutLine: {'line': b'Installing traffic_light_detector_node script to /home/cc/ros2_ws/install/camera_perception_pkg/lib/camera_perception_pkg\n'}
+[16.696395] (camera_perception_pkg) StdoutLine: {'line': b'Installing yolov8_node script to /home/cc/ros2_ws/install/camera_perception_pkg/lib/camera_perception_pkg\n'}
+[16.710717] (lidar_perception_pkg) StdoutLine: {'line': b'writing dependency_links to lidar_perception_pkg.egg-info/dependency_links.txt\n'}
+[16.715434] (camera_perception_pkg) StdoutLine: {'line': b'\n'}
+[16.721694] (camera_perception_pkg) StdoutLine: {'line': b'Installed /home/cc/ros2_ws/build/camera_perception_pkg\n'}
+[16.732173] (-) TimerEvent: {}
+[16.737393] (camera_perception_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[16.739454] (lidar_perception_pkg) StdoutLine: {'line': b'writing entry points to lidar_perception_pkg.egg-info/entry_points.txt\n'}
+[16.741410] (lidar_perception_pkg) StdoutLine: {'line': b'writing requirements to lidar_perception_pkg.egg-info/requires.txt\n'}
+[16.742924] (lidar_perception_pkg) StdoutLine: {'line': b'writing top-level names to lidar_perception_pkg.egg-info/top_level.txt\n'}
+[16.744206] (lidar_perception_pkg) StdoutLine: {'line': b"reading manifest file 'lidar_perception_pkg.egg-info/SOURCES.txt'\n"}
+[16.745194] (lidar_perception_pkg) StdoutLine: {'line': b"writing manifest file 'lidar_perception_pkg.egg-info/SOURCES.txt'\n"}
+[16.746195] (lidar_perception_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[16.747072] (lidar_perception_pkg) StdoutLine: {'line': b'Creating /home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages/lidar-perception-pkg.egg-link (link to .)\n'}
+[16.749770] (lidar_perception_pkg) StdoutLine: {'line': b'Installing lidar_obstacle_detector_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg\n'}
+[16.751539] (lidar_perception_pkg) StdoutLine: {'line': b'Installing lidar_processor_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg\n'}
+[16.752735] (lidar_perception_pkg) StdoutLine: {'line': b'Installing lidar_publisher_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg\n'}
+[16.758491] (lidar_perception_pkg) StdoutLine: {'line': b'\n'}
+[16.767763] (lidar_perception_pkg) StdoutLine: {'line': b'Installed /home/cc/ros2_ws/build/lidar_perception_pkg\n'}
+[16.769300] (lidar_perception_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[16.836807] (-) TimerEvent: {}
+[16.853870] (debug_pkg) JobEnded: {'identifier': 'debug_pkg', 'rc': 0}
+[16.861977] (decision_making_pkg) JobStarted: {'identifier': 'decision_making_pkg'}
+[16.937061] (-) TimerEvent: {}
+[17.039755] (-) TimerEvent: {}
+[17.144037] (-) TimerEvent: {}
+[17.247740] (-) TimerEvent: {}
+[17.352897] (-) TimerEvent: {}
+[17.458561] (-) TimerEvent: {}
+[17.562545] (-) TimerEvent: {}
+[17.664396] (-) TimerEvent: {}
+[17.766656] (-) TimerEvent: {}
+[17.867972] (-) TimerEvent: {}
+[17.970052] (-) TimerEvent: {}
+[18.071185] (-) TimerEvent: {}
+[18.137706] (serial_communication_pkg) StdoutLine: {'line': b'running develop\n'}
+[18.171329] (-) TimerEvent: {}
+[18.272254] (-) TimerEvent: {}
+[18.373191] (-) TimerEvent: {}
+[18.474513] (-) TimerEvent: {}
+[18.576422] (-) TimerEvent: {}
+[18.677706] (-) TimerEvent: {}
+[18.779478] (-) TimerEvent: {}
+[18.880385] (-) TimerEvent: {}
+[18.981335] (-) TimerEvent: {}
+[19.082569] (-) TimerEvent: {}
+[19.184551] (-) TimerEvent: {}
+[19.285728] (-) TimerEvent: {}
+[19.387345] (-) TimerEvent: {}
+[19.470212] (camera_perception_pkg) CommandEnded: {'returncode': 0}
+[19.490139] (-) TimerEvent: {}
+[19.583326] (camera_perception_pkg) JobEnded: {'identifier': 'camera_perception_pkg', 'rc': 0}
+[19.600339] (-) TimerEvent: {}
+[19.603017] (lidar_perception_pkg) CommandEnded: {'returncode': 0}
+[19.674885] (serial_communication_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[19.688907] (serial_communication_pkg) StdoutLine: {'line': b'writing serial_communication_pkg.egg-info/PKG-INFO\n'}
+[19.695999] (serial_communication_pkg) StdoutLine: {'line': b'writing dependency_links to serial_communication_pkg.egg-info/dependency_links.txt\n'}
+[19.701174] (-) TimerEvent: {}
+[19.702532] (serial_communication_pkg) StdoutLine: {'line': b'writing entry points to serial_communication_pkg.egg-info/entry_points.txt\n'}
+[19.706615] (serial_communication_pkg) StdoutLine: {'line': b'writing requirements to serial_communication_pkg.egg-info/requires.txt\n'}
+[19.708040] (serial_communication_pkg) StdoutLine: {'line': b'writing top-level names to serial_communication_pkg.egg-info/top_level.txt\n'}
+[19.708629] (serial_communication_pkg) StdoutLine: {'line': b"reading manifest file 'serial_communication_pkg.egg-info/SOURCES.txt'\n"}
+[19.709305] (lidar_perception_pkg) JobEnded: {'identifier': 'lidar_perception_pkg', 'rc': 0}
+[19.732991] (serial_communication_pkg) StdoutLine: {'line': b"writing manifest file 'serial_communication_pkg.egg-info/SOURCES.txt'\n"}
+[19.744343] (serial_communication_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[19.746807] (serial_communication_pkg) StdoutLine: {'line': b'Creating /home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial-communication-pkg.egg-link (link to .)\n'}
+[19.755473] (serial_communication_pkg) StdoutLine: {'line': b'Installing serial_sender_node script to /home/cc/ros2_ws/install/serial_communication_pkg/lib/serial_communication_pkg\n'}
+[19.759105] (serial_communication_pkg) StdoutLine: {'line': b'\n'}
+[19.760617] (serial_communication_pkg) StdoutLine: {'line': b'Installed /home/cc/ros2_ws/build/serial_communication_pkg\n'}
+[19.762024] (serial_communication_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[19.801551] (-) TimerEvent: {}
+[19.904608] (-) TimerEvent: {}
+[20.008697] (-) TimerEvent: {}
+[20.051022] (serial_communication_pkg) CommandEnded: {'returncode': 0}
+[20.108783] (-) TimerEvent: {}
+[20.130813] (serial_communication_pkg) JobEnded: {'identifier': 'serial_communication_pkg', 'rc': 0}
+[20.208967] (-) TimerEvent: {}
+[20.309795] (-) TimerEvent: {}
+[20.410539] (-) TimerEvent: {}
+[20.511314] (-) TimerEvent: {}
+[20.612054] (-) TimerEvent: {}
+[20.712794] (-) TimerEvent: {}
+[20.813528] (-) TimerEvent: {}
+[20.914253] (-) TimerEvent: {}
+[21.015054] (-) TimerEvent: {}
+[21.115871] (-) TimerEvent: {}
+[21.216667] (-) TimerEvent: {}
+[21.317395] (-) TimerEvent: {}
+[21.418276] (-) TimerEvent: {}
+[21.519314] (-) TimerEvent: {}
+[21.620271] (-) TimerEvent: {}
+[21.721760] (-) TimerEvent: {}
+[21.823142] (-) TimerEvent: {}
+[21.868048] (decision_making_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/cc/ros2_ws/build/decision_making_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/cc/ros2_ws/build/decision_making_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cc', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cc', 'OLDPWD': '/home/cc/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '925', 'SYSTEMD_EXEC_PID': '1348', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2143', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cc/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cc', 'JOURNAL_STREAM': '8:22298', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cc', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/cc/.local/bin:/home/cc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/cc-desktop:@/tmp/.ICE-unix/1325,unix/cc-desktop:/tmp/.ICE-unix/1325', 'INVOCATION_ID': 'ed8d013412294e488ae751196f0ed858', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cc/ros2_ws/install/serial_communication_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg:/home/cc/ros2_ws/install/decision_making_pkg:/home/cc/ros2_ws/install/interfaces_pkg:/home/cc/ros2_ws/install/debug_pkg:/home/cc/ros2_ws/install/camera_perception_pkg:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:6c9d5abd-a68f-46d8-b328-dcdd4c2cd08e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cc/ros2_ws/build/decision_making_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cc/ros2_ws/build/decision_making_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/serial_communication_pkg:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/lidar_perception_pkg:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/decision_making_pkg:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/install/interfaces_pkg/local/lib/python3.10/dist-packages:/home/cc/ros2_ws/build/debug_pkg:/home/cc/ros2_ws/install/debug_pkg/lib/python3.10/site-packages:/home/cc/ros2_ws/build/camera_perception_pkg:/home/cc/ros2_ws/install/camera_perception_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/cc/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[21.923289] (-) TimerEvent: {}
+[22.024033] (-) TimerEvent: {}
+[22.124808] (-) TimerEvent: {}
+[22.225643] (-) TimerEvent: {}
+[22.326493] (-) TimerEvent: {}
+[22.427287] (-) TimerEvent: {}
+[22.527999] (-) TimerEvent: {}
+[22.628707] (-) TimerEvent: {}
+[22.729416] (-) TimerEvent: {}
+[22.830131] (-) TimerEvent: {}
+[22.930960] (-) TimerEvent: {}
+[23.031725] (-) TimerEvent: {}
+[23.132590] (-) TimerEvent: {}
+[23.233735] (-) TimerEvent: {}
+[23.334556] (-) TimerEvent: {}
+[23.435481] (-) TimerEvent: {}
+[23.458539] (decision_making_pkg) StdoutLine: {'line': b'running develop\n'}
+[23.535612] (-) TimerEvent: {}
+[23.636326] (-) TimerEvent: {}
+[23.737032] (-) TimerEvent: {}
+[23.837779] (-) TimerEvent: {}
+[23.938576] (-) TimerEvent: {}
+[24.039337] (-) TimerEvent: {}
+[24.140103] (-) TimerEvent: {}
+[24.240818] (-) TimerEvent: {}
+[24.341572] (-) TimerEvent: {}
+[24.442406] (-) TimerEvent: {}
+[24.450785] (decision_making_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[24.451570] (decision_making_pkg) StdoutLine: {'line': b'writing decision_making_pkg.egg-info/PKG-INFO\n'}
+[24.452760] (decision_making_pkg) StdoutLine: {'line': b'writing dependency_links to decision_making_pkg.egg-info/dependency_links.txt\n'}
+[24.453985] (decision_making_pkg) StdoutLine: {'line': b'writing entry points to decision_making_pkg.egg-info/entry_points.txt\n'}
+[24.454762] (decision_making_pkg) StdoutLine: {'line': b'writing requirements to decision_making_pkg.egg-info/requires.txt\n'}
+[24.455733] (decision_making_pkg) StdoutLine: {'line': b'writing top-level names to decision_making_pkg.egg-info/top_level.txt\n'}
+[24.464248] (decision_making_pkg) StdoutLine: {'line': b"reading manifest file 'decision_making_pkg.egg-info/SOURCES.txt'\n"}
+[24.468522] (decision_making_pkg) StdoutLine: {'line': b"writing manifest file 'decision_making_pkg.egg-info/SOURCES.txt'\n"}
+[24.478490] (decision_making_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[24.479458] (decision_making_pkg) StdoutLine: {'line': b'Creating /home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages/decision-making-pkg.egg-link (link to .)\n'}
+[24.483268] (decision_making_pkg) StdoutLine: {'line': b'Installing eth0_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg\n'}
+[24.484256] (decision_making_pkg) StdoutLine: {'line': b'Installing motion_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg\n'}
+[24.485197] (decision_making_pkg) StdoutLine: {'line': b'Installing path_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg\n'}
+[24.486614] (decision_making_pkg) StdoutLine: {'line': b'\n'}
+[24.487296] (decision_making_pkg) StdoutLine: {'line': b'Installed /home/cc/ros2_ws/build/decision_making_pkg\n'}
+[24.487745] (decision_making_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[24.542706] (-) TimerEvent: {}
+[24.644112] (-) TimerEvent: {}
+[24.676503] (decision_making_pkg) CommandEnded: {'returncode': 0}
+[24.727026] (decision_making_pkg) JobEnded: {'identifier': 'decision_making_pkg', 'rc': 0}
+[24.730412] (-) EventReactorShutdown: {}

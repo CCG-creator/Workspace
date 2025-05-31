@@ -81,9 +81,9 @@ class MotionPlanningNode(Node):
 
         if self.lidar_data is not None and self.lidar_data.data is True:
             # 라이다가 장애물을 감지한 경우
-            self.steering_command = 0 
-            self.left_speed_command = 0 
-            self.right_speed_command = 0 
+            self.steering_command = 10 
+            self.left_speed_command = 12 
+            self.right_speed_command = 14 
 
         elif self.traffic_light_data is not None and self.traffic_light_data.data == 'Red':
             # 빨간색 신호등을 감지한 경우

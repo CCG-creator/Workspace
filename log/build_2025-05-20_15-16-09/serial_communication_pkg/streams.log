@@ -1,0 +1,17 @@
+[21.740s] Invoking command in '/home/cc/ros2_ws/build/serial_communication_pkg': PYTHONPATH=/home/cc/ros2_ws/build/serial_communication_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/serial_communication_pkg/build --no-deps symlink_data
+[31.071s] running develop
+[36.495s] running egg_info
+[36.497s] writing serial_communication_pkg.egg-info/PKG-INFO
+[36.510s] writing dependency_links to serial_communication_pkg.egg-info/dependency_links.txt
+[36.539s] writing entry points to serial_communication_pkg.egg-info/entry_points.txt
+[36.556s] writing requirements to serial_communication_pkg.egg-info/requires.txt
+[36.560s] writing top-level names to serial_communication_pkg.egg-info/top_level.txt
+[36.574s] reading manifest file 'serial_communication_pkg.egg-info/SOURCES.txt'
+[36.581s] writing manifest file 'serial_communication_pkg.egg-info/SOURCES.txt'
+[36.611s] running build_ext
+[36.639s] Creating /home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages/serial-communication-pkg.egg-link (link to .)
+[36.658s] Installing serial_sender_node script to /home/cc/ros2_ws/install/serial_communication_pkg/lib/serial_communication_pkg
+[36.669s] 
+[36.673s] Installed /home/cc/ros2_ws/build/serial_communication_pkg
+[36.678s] running symlink_data
+[37.247s] Invoked command in '/home/cc/ros2_ws/build/serial_communication_pkg' returned '0': PYTHONPATH=/home/cc/ros2_ws/build/serial_communication_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/serial_communication_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/serial_communication_pkg/build --no-deps symlink_data

@@ -1,0 +1,1 @@
+/home/cc/ros2_ws/src/interfaces_pkg/msg/MotionCommand.msg

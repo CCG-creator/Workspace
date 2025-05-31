@@ -1,0 +1,19 @@
+[10.656s] Invoking command in '/home/cc/ros2_ws/build/decision_making_pkg': LD_LIBRARY_PATH=/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ros2_ws/build/decision_making_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/decision_making_pkg/build --no-deps symlink_data
+[12.689s] running develop
+[14.268s] running egg_info
+[14.269s] writing decision_making_pkg.egg-info/PKG-INFO
+[14.271s] writing dependency_links to decision_making_pkg.egg-info/dependency_links.txt
+[14.273s] writing entry points to decision_making_pkg.egg-info/entry_points.txt
+[14.273s] writing requirements to decision_making_pkg.egg-info/requires.txt
+[14.274s] writing top-level names to decision_making_pkg.egg-info/top_level.txt
+[14.283s] reading manifest file 'decision_making_pkg.egg-info/SOURCES.txt'
+[14.295s] writing manifest file 'decision_making_pkg.egg-info/SOURCES.txt'
+[14.307s] running build_ext
+[14.308s] Creating /home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages/decision-making-pkg.egg-link (link to .)
+[14.314s] Installing eth0_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[14.316s] Installing motion_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[14.318s] Installing path_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[14.321s] 
+[14.323s] Installed /home/cc/ros2_ws/build/decision_making_pkg
+[14.324s] running symlink_data
+[14.559s] Invoked command in '/home/cc/ros2_ws/build/decision_making_pkg' returned '0': LD_LIBRARY_PATH=/home/cc/ros2_ws/install/interfaces_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ros2_ws/build/decision_making_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/decision_making_pkg/build --no-deps symlink_data

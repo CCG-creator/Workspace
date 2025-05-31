@@ -1,0 +1,19 @@
+[11.118s] Invoking command in '/home/cc/ros2_ws/build/lidar_perception_pkg': PYTHONPATH=/home/cc/ros2_ws/build/lidar_perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/lidar_perception_pkg/build --no-deps symlink_data
+[14.210s] running develop
+[16.488s] running egg_info
+[16.496s] writing lidar_perception_pkg.egg-info/PKG-INFO
+[16.551s] writing dependency_links to lidar_perception_pkg.egg-info/dependency_links.txt
+[16.578s] writing entry points to lidar_perception_pkg.egg-info/entry_points.txt
+[16.580s] writing requirements to lidar_perception_pkg.egg-info/requires.txt
+[16.581s] writing top-level names to lidar_perception_pkg.egg-info/top_level.txt
+[16.582s] reading manifest file 'lidar_perception_pkg.egg-info/SOURCES.txt'
+[16.583s] writing manifest file 'lidar_perception_pkg.egg-info/SOURCES.txt'
+[16.584s] running build_ext
+[16.586s] Creating /home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages/lidar-perception-pkg.egg-link (link to .)
+[16.588s] Installing lidar_obstacle_detector_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg
+[16.589s] Installing lidar_processor_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg
+[16.591s] Installing lidar_publisher_node script to /home/cc/ros2_ws/install/lidar_perception_pkg/lib/lidar_perception_pkg
+[16.603s] 
+[16.606s] Installed /home/cc/ros2_ws/build/lidar_perception_pkg
+[16.607s] running symlink_data
+[19.452s] Invoked command in '/home/cc/ros2_ws/build/lidar_perception_pkg' returned '0': PYTHONPATH=/home/cc/ros2_ws/build/lidar_perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/lidar_perception_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/lidar_perception_pkg/build --no-deps symlink_data

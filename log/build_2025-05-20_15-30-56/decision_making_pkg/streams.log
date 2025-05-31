@@ -1,0 +1,19 @@
+[5.019s] Invoking command in '/home/cc/ros2_ws/build/decision_making_pkg': PYTHONPATH=/home/cc/ros2_ws/build/decision_making_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/decision_making_pkg/build --no-deps symlink_data
+[6.597s] running develop
+[7.589s] running egg_info
+[7.589s] writing decision_making_pkg.egg-info/PKG-INFO
+[7.591s] writing dependency_links to decision_making_pkg.egg-info/dependency_links.txt
+[7.592s] writing entry points to decision_making_pkg.egg-info/entry_points.txt
+[7.593s] writing requirements to decision_making_pkg.egg-info/requires.txt
+[7.594s] writing top-level names to decision_making_pkg.egg-info/top_level.txt
+[7.602s] reading manifest file 'decision_making_pkg.egg-info/SOURCES.txt'
+[7.606s] writing manifest file 'decision_making_pkg.egg-info/SOURCES.txt'
+[7.617s] running build_ext
+[7.617s] Creating /home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages/decision-making-pkg.egg-link (link to .)
+[7.621s] Installing eth0_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[7.622s] Installing motion_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[7.623s] Installing path_planner_node script to /home/cc/ros2_ws/install/decision_making_pkg/lib/decision_making_pkg
+[7.625s] 
+[7.625s] Installed /home/cc/ros2_ws/build/decision_making_pkg
+[7.626s] running symlink_data
+[7.817s] Invoked command in '/home/cc/ros2_ws/build/decision_making_pkg' returned '0': PYTHONPATH=/home/cc/ros2_ws/build/decision_making_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ros2_ws/install/decision_making_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/cc/ros2_ws/build/decision_making_pkg/build --no-deps symlink_data
